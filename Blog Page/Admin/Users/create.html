@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="stylesheet" href="../../Css/stil.css">
+
+        <link rel="stylesheet" href="../../Css/admin.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+        
+        <title>Admin menyu - İstifadəçi daxil et</title>
+
+    
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo-text"><span>Blog</span>Blog</h1>
+
+            </div>
+            
+            <i class="fa fa-bars menu-toggle" aria-hidden="true" ></i>
+
+            <ul class="nav">
+                <li>
+                <a href="#">
+                    
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    Blog Blog
+                    <i class="fa fa-check-square" aria-hidden="true"></i>
+                
+                </a>
+                <ul>
+                    
+                    <li><a href="#" class="logout">Çıxış</a></li>
+
+
+                </ul> 
+            </li>
+        </ul>
+    </header>
+
+    <div class="admin-wrapper">
+
+        <div class="left-sidebar">
+            <ul>
+                <li><a href="../Posts/index.html">Postları düzəlt</a></li>
+                <li><a href="index.html">İstifadəçiləri düzəlt</a></li>
+                <li><a href="../Topics/index.html">Mövzuları düzəlt</a></li>
+            </ul>
+
+        </div>
+
+        <div class="admin-content">
+            <div class="button-group">
+            <a href="create.html" class="btn btn-big">İstifadəçi daxil et</a>
+            <a href="index.html" class="btn btn-big">İstifadəçiləri düzəlt</a>
+        </div>
+        <div class="content">
+
+            <h2 class="page-title">İstifadəçi daxil et</h2>
+
+            <form action="create.html" method="post">
+                <div>
+                    <label>İstifadəçi Adı</label>
+                    <input type="text" name="username" class="text-input">
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" name="email" class="text-input">
+                </div>
+                <div>
+                    <label>Şifrə</label>
+                    <input type="password" name="password" class="text-input">
+                </div>
+                <div>
+                    <label>Şifrə Təkrarı</label>
+                    <input type="password" name="passwordConf" class="text-input">
+                </div>
+
+                <div>
+                    <label>Vəzifəsi</label>
+                    <select name="role" class="text-input">
+                        <option value="author">Müəllif</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+            
+              
+                <div>
+                    <button type="submit" class="btn big-btn">Əlavə et</button>
+                </div>
+
+             
+            </form>
+           
+
+        </div>
+
+        </div>
+        
+            </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+    
+    <script src='../../js/java.js'></script>
+
+    
+				
+
+
+</body>
+
+</html>    
